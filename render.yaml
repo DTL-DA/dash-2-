@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: dash-financiera-dtorres
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile

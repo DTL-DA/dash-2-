@@ -1,0 +1,82 @@
+/* Tema "Terminal técnica": fondo azul petróleo y acento turquesa sobre Bootswatch Slate */
+:root {
+    --fondo-1: #0a1422;
+    --fondo-2: #14283f;
+    --acento: #2dd4bf;
+    --borde: #2f4a66;
+    --texto: #eaf2f8;
+}
+
+body {
+    background: linear-gradient(160deg, var(--fondo-1) 0%, var(--fondo-2) 100%) fixed;
+    color: var(--texto);
+}
+
+.fondo-app { min-height: 100vh; padding-bottom: 24px; }
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 32px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--acento);
+    background: rgba(0, 0, 0, 0.3);
+}
+.logo { height: 64px; width: 64px; }
+.titulo-app { margin: 0; font-weight: 800; color: var(--acento); letter-spacing: 0.5px; }
+.subtitulo-app { margin: 0; color: #b6c6d6; }
+
+.panel-controles { margin-bottom: 8px; }
+.etiqueta-control { font-weight: 600; color: var(--acento); margin-bottom: 4px; }
+
+.caja-param {
+    padding: 10px 12px;
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.04);
+    height: 100%;
+}
+.titulo-param { color: var(--acento); font-weight: 700; margin-bottom: 8px; }
+
+.tarjeta {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+}
+.tarjeta .card-header {
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid var(--borde);
+}
+.titulo-tarjeta { font-weight: 800; font-size: 1.15rem; color: var(--acento); }
+
+.aviso {
+    margin: 8px 0 16px;
+    padding: 10px 16px;
+    border-radius: 6px;
+    background: rgba(245, 179, 1, 0.14);
+    border: 1px solid rgba(245, 179, 1, 0.5);
+    color: #f5b301;
+    font-weight: 600;
+}
+
+.pie-pagina { text-align: center; color: #8aa0b5; margin-top: 8px; }
+
+/* Dropdowns de Dash sobre fondo oscuro */
+.Select-control, .Select-menu-outer {
+    background-color: var(--fondo-2) !important;
+    border-color: var(--borde) !important;
+}
+.Select-value-label, .Select-placeholder, .Select-input > input,
+.Select--single > .Select-control .Select-value .Select-value-label {
+    color: var(--texto) !important;
+}
+.Select--multi .Select-value {
+    background-color: rgba(45, 212, 191, 0.15) !important;
+    border: 1px solid var(--acento) !important;
+    color: var(--acento) !important;
+}
+.Select--multi .Select-value-label, .Select--multi .Select-value-icon { color: var(--acento) !important; }
+.VirtualizedSelectOption { background-color: var(--fondo-2) !important; color: var(--texto) !important; }
+.VirtualizedSelectFocusedOption { background-color: var(--borde) !important; }
+.Select-arrow { border-top-color: var(--acento) !important; }

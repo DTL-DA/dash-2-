@@ -1,0 +1,6 @@
+dash==2.14.0
+plotly==5.17.0
+pandas==2.1.1
+numpy==1.26.1
+Flask==2.2.5
+Werkzeug==2.2.3
